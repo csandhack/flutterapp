@@ -10,8 +10,12 @@ void main() {
   // As we passing Text() as a parameter to Center()
   // Great.
 
+  // runApp() inflates the Widget and show it on app Screen.
+  // MaterialApp()
+  // title: our app title when we minimize app.
   runApp(MaterialApp(
     title: "My Flutter App",
+    // Scaffold allows to put appBar on top of application/screen.
     home: Scaffold(
       appBar: AppBar(
         title: const Text("My First Screen"),
