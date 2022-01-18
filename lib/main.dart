@@ -9,6 +9,20 @@ void main() {
   // We are passing TextWidget as a parameter which will be shown in the center of screen.
   // As we passing Text() as a parameter to Center()
   // Great.
-  runApp(const Center(
-      child: Text("Hi Flutter", textDirection: TextDirection.ltr)));
+
+  runApp(MaterialApp(
+    title: "My Flutter App",
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text("My First Screen"),
+      ),
+      body: const Material(
+        color: Colors.blueAccent,
+        textStyle: TextStyle(color: Colors.white, fontSize: 40.0),
+        child: Center(
+          child: Text("Hi Faisal"),
+        ),
+      ),
+    ),
+  ));
 }
